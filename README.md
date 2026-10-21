@@ -20,43 +20,4 @@ A demo website for **Caribe Tree Services LLC**, a tree service company in Kissi
 
 Next.js 15 (App Router), React 19 and TypeScript. All styles are plain CSS in one file, `app/globals.css`. There are no UI or animation libraries.
 
-## Run locally
 
-```bash
-npm install
-npm run dev
-```
-
-Then open http://localhost:3000.
-
-## Deploy
-
-The site is meant for [Vercel](https://vercel.com):
-
-1. Import this repo in Vercel.
-2. Click **Deploy**. The default settings work.
-
-Each push to `main` redeploys the site automatically.
-
-## Project structure
-
-```
-app/
-  layout.tsx       page metadata
-  page.tsx         section order
-  globals.css      all styles
-components/        one file per section (Hero, Storm, BeforeAfter, Estimate, ...)
-lib/
-  site.ts          real business details (name, phone, WhatsApp)
-  dict.ts          all English + Spanish copy
-  i18n.tsx         language context
-```
-
-## Before going live
-
-- [ ] Replace the sample reviews in `lib/dict.ts` with real Google reviews.
-- [ ] Swap the before/after illustration for real job photos.
-- [ ] Confirm the services, service area and claims (insurance, 24/7) with the owner.
-- [ ] Connect the estimate form to email or SMS. In this demo it sends nothing.
-- [ ] Remove the "Demo preview" bar and the demo note in the footer.
-- [ ] Add a custom domain in Vercel.
